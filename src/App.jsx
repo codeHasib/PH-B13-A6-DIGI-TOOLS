@@ -6,11 +6,15 @@ import Stats from "./components/Stats/Stats";
 import ProductTab from "./components/ProductTab/ProductTab";
 import CardParent from "./components/CardParent/CardParent";
 import axios from "axios";
+import { ToastContainer } from "react-toastify";
+import CartParent from "./components/CartParent/CartParent";
 
 const productData = axios.get("/src/assets/tools.json");
 
 function App() {
   const [currentTab, setCurrentTab] = useState("products");
+  const [cart, setCart] = useState([]);
+
   return (
     <>
       <Nav></Nav>
@@ -21,16 +25,26 @@ function App() {
         currentTab={currentTab}
         setCurrentTab={setCurrentTab}
       ></ProductTab>
-      <Suspense
-        fallback={
-          <div className="col-span-full justify-items-center">
-            {" "}
-            <span className="loading loading-ring loading-xl"></span>{" "}
-          </div>
-        }
-      >
-        <CardParent productData={productData}></CardParent>
-      </Suspense>
+      {currentTab === "products" ? (
+        <Suspense
+          fallback={
+            <div className="col-span-full justify-items-center">
+              {" "}
+              <span className="loading loading-ring loading-xl"></span>{" "}
+            </div>
+          }
+        >
+          <CardParent
+            productData={productData}
+            cart={cart}
+            setCart={setCart}
+          ></CardParent>
+        </Suspense>
+      ) : (
+        <CartParent cart={cart}></CartParent>
+      )}
+
+      <ToastContainer></ToastContainer>
     </>
   );
 }

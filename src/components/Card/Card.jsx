@@ -1,10 +1,19 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const Card = ({ product }) => {
+const Card = ({ product, setCart, cart }) => {
   const { name, description, price, period, tagType, features, img } = product;
+
+  const isAdded = cart.some((item) => item.id === product.id);
+
+  function addToCart() {
+    setCart((prev) => [...prev, product]);
+    toast.success(`${name} successfully added to cart`);
+  }
+
   return (
     <div>
-      <div className="card px-5 bg-base-100 shadow-sm duration-100 transition-all ease-in-out hover:shadow-xl">
+      <div className="card px-5 bg-base-100 shadow-sm duration-100 transition-all ease-in-out hover:shadow-xl min-h-125">
         <div className="card-body">
           <div className="flex justify-end">
             <span
@@ -53,7 +62,18 @@ const Card = ({ product }) => {
             ))}
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary btn-block"> Buy Now </button>
+            <button
+              onClick={addToCart}
+              disabled={isAdded}
+              className={
+                isAdded
+                  ? "btn btn-accent btn-block"
+                  : "btn btn-primary btn-block"
+              }
+            >
+              {" "}
+              {isAdded ? "Added to cart" : "Buy Now"}{" "}
+            </button>
           </div>
         </div>
       </div>
