@@ -14,6 +14,7 @@ const productData = axios.get("/src/assets/tools.json");
 function App() {
   const [currentTab, setCurrentTab] = useState("products");
   const [cart, setCart] = useState([]);
+  const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <>
@@ -42,7 +43,11 @@ function App() {
           ></CardParent>
         </Suspense>
       ) : (
-        <CartParent setCart={setCart} cart={cart}></CartParent>
+        <CartParent
+          total={totalPrice}
+          setCart={setCart}
+          cart={cart}
+        ></CartParent>
       )}
 
       <ToastContainer></ToastContainer>
