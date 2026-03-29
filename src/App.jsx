@@ -30,7 +30,7 @@ function App() {
       {currentTab === "products" ? (
         <Suspense
           fallback={
-            <div className="col-span-full justify-items-center">
+            <div className="col-span-full flex justify-center items-center">
               {" "}
               <span className="loading loading-ring loading-xl"></span>{" "}
             </div>

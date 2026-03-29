@@ -3,12 +3,18 @@ import Cart from "../Cart/Cart";
 import EmptyCart from "../EmptyCart/EmptyCart";
 import { toast } from "react-toastify";
 import TotalCart from "../TotalCart/TotalCart";
+import CheckOut from "../CheckOut/CheckOut";
 
 const CartParent = ({ cart, setCart, total }) => {
   function removeItem(id) {
     const filtered = cart.filter((item) => id !== item.id);
     setCart(filtered);
     toast.error("Removed item from cart");
+  }
+
+  function checkOut() {
+    setCart([]);
+    toast.success("Product Checked-out Successfully!!");
   }
 
   return (
@@ -28,6 +34,7 @@ const CartParent = ({ cart, setCart, total }) => {
               ))}
             </div>
             <TotalCart total={total}></TotalCart>
+            <CheckOut checkOut={checkOut}></CheckOut>
           </>
         ) : (
           <EmptyCart></EmptyCart>
