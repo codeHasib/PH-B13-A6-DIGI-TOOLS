@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductTab = ({ currentTab, setCurrentTab }) => {
+const ProductTab = ({ currentTab, setCurrentTab, cart }) => {
   function toggle(e) {
     const value = e.target.value;
     setCurrentTab(value);
@@ -28,7 +28,7 @@ const ProductTab = ({ currentTab, setCurrentTab }) => {
         }
       >
         {" "}
-        Cart{" "}
+        {cart.length > 0 ? `Cart (${cart.length})` : "Cart"}{" "}
       </button>
     </div>
   );

@@ -17,13 +17,14 @@ function App() {
 
   return (
     <>
-      <Nav></Nav>
+      <Nav cart={cart}></Nav>
       <Banner></Banner>
       <Stats></Stats>
       <ProductTitle></ProductTitle>
       <ProductTab
         currentTab={currentTab}
         setCurrentTab={setCurrentTab}
+        cart={cart}
       ></ProductTab>
       {currentTab === "products" ? (
         <Suspense
@@ -41,7 +42,7 @@ function App() {
           ></CardParent>
         </Suspense>
       ) : (
-        <CartParent cart={cart}></CartParent>
+        <CartParent setCart={setCart} cart={cart}></CartParent>
       )}
 
       <ToastContainer></ToastContainer>
