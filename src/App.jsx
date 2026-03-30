@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import CartParent from "./components/CartParent/CartParent";
 import StepsParent from "./components/StepsParent/StepsParent";
 import OfferParent from "./components/OfferParent/OfferParent";
+import Ready from "./components/Ready/Ready";
 
 const productData = axios.get("/src/assets/tools.json");
 
@@ -53,7 +54,7 @@ function App() {
       )}
       <StepsParent></StepsParent>
       <OfferParent></OfferParent>
-
+      <Ready></Ready>
       <ToastContainer></ToastContainer>
     </>
   );
