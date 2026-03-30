@@ -11,6 +11,7 @@ import CartParent from "./components/CartParent/CartParent";
 import StepsParent from "./components/StepsParent/StepsParent";
 import OfferParent from "./components/OfferParent/OfferParent";
 import Ready from "./components/Ready/Ready";
+import Footer from "./components/Footer/Footer";
 
 const productData = axios.get("/src/assets/tools.json");
 
@@ -55,6 +56,7 @@ function App() {
       <StepsParent></StepsParent>
       <OfferParent></OfferParent>
       <Ready></Ready>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </>
   );

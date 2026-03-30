@@ -2,7 +2,7 @@ import React from "react";
 
 const Ready = () => {
   return (
-    <div className="bg-linear-to-r from-purple-700 to-pink-400 text-center py-20 text-white space-y-5 my-10">
+    <div className="bg-linear-to-r from-purple-700 to-pink-400 text-center py-25 text-white space-y-5">
       <h2 className="text-2xl font-bold lg:text-4xl md:text-3xl">
         Ready To Transform Your Workflow?
       </h2>
@@ -18,7 +18,7 @@ const Ready = () => {
           View Pricing
         </button>
       </div>
-      <ul className="flex justify-center items-center gap-4">
+      <ul className="flex justify-center items-center gap-4 flex-wrap">
         <li>14-day free trial</li>
         <li className="list-disc list-inside">No credit card required</li>
         <li className="list-disc list-inside">Cancel anytime</li>
