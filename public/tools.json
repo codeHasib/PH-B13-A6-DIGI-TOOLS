@@ -8,7 +8,7 @@
     "tag": "best seller",
     "tagType": "best-seller",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "img": "/public/assets/products/design-tool.png"
+    "img": "./assets/products/design-tool.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Multi-language support", "Code generation", "24/7 AI chat"],
-    "img": "/public/assets/products/operation.png"
+    "img": "./assets/products/operation.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Figma export", "Auto layout", "Design templates"],
-    "img": "/public/assets/products/portfolio.png"
+    "img": "./assets/products/portfolio.png"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
       "Multiple languages",
       "Audio download"
     ],
-    "img": "/public/assets/products/shopping-cart.png"
+    "img": "./assets/products/shopping-cart.png"
   },
   {
     "id": 5,
@@ -60,7 +60,7 @@
       "Bug detection",
       "Supports 20+ languages"
     ],
-    "img": "/public/assets/products/social-media.png"
+    "img": "./assets/products/social-media.png"
   },
   {
     "id": 6,
@@ -71,7 +71,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["HD image export", "Custom styles", "Fast generation"],
-    "img": "/public/assets/products/writing_2327400 1.png"
+    "img": "./assets/products/writing_2327400 1.png"
   },
   {
     "id": 7,
@@ -82,7 +82,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Text-to-video", "Stock footage", "Voice narration"],
-    "img": "/public/assets/products/design-tool.png"
+    "img": "./assets/products/design-tool.png"
   },
   {
     "id": 8,
@@ -97,6 +97,6 @@
       "Content scoring",
       "Competitor analysis"
     ],
-    "img": "/public/assets/products/operation.png"
+    "img": "./assets/products/operation.png"
   }
 ]

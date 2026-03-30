@@ -9,12 +9,12 @@ const StepsParent = () => {
           Get Started in 3 Steps
         </h2>
         <p className="text-center text-gray-400 mb-5">
-          Start us•ng premium digital tools in minutes. not hours.
+          Start using premium digital tools in minutes. not hours.
         </p>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center flex-wrap">
           <Steps
             no={"01"}
-            img={"/public/assets/user.png"}
+            img={"/assets/user.png"}
             name={"Create Account"}
             desc={
               "Sign for free in seconds. credit card required to get started."
@@ -22,7 +22,7 @@ const StepsParent = () => {
           ></Steps>
           <Steps
             no={"02"}
-            img={"/public/assets/package.png"}
+            img={"/assets/package.png"}
             name={"Choose Products"}
             desc={
               "Browse our catalog and select the tools that fit your needs."
@@ -30,7 +30,7 @@ const StepsParent = () => {
           ></Steps>
           <Steps
             no={"03"}
-            img={"/public/assets/rocket.png"}
+            img={"/assets/rocket.png"}
             name={"Start Creating"}
             desc={"Download and start using your premium tools immediately"}
           ></Steps>
