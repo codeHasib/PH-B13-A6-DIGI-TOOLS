@@ -4,7 +4,7 @@ import React from "react";
 const Nav = ({ cart }) => {
   return (
     <>
-      <nav className="border-b border-gray-300">
+      <nav className="border-b border-gray-300 sticky top-0 left-0 z-10 bg-white shadow-sm">
         <div className="container mx-auto">
           <div className="navbar bg-base-100 border-none">
             <div className="navbar-start">

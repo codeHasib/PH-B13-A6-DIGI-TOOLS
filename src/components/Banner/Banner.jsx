@@ -32,7 +32,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="shadow-xl">
         <img src="/assets/banner.png" alt="" />
       </div>
     </div>
