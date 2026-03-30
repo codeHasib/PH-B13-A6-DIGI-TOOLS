@@ -25,7 +25,7 @@ Digi-Tools is a modern web application where users can explore and purchase subs
 ## 📦 Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/digi-tools.git
+git clone https://github.com/codeHasib/digi-tools.git
 cd digi-tools
 npm install
 npm run dev
