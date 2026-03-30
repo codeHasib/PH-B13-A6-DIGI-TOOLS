@@ -13,7 +13,7 @@ import OfferParent from "./components/OfferParent/OfferParent";
 import Ready from "./components/Ready/Ready";
 import Footer from "./components/Footer/Footer";
 
-const productData = axios.get("/src/assets/tools.json");
+const productData = axios.get("/tools.json");
 
 function App() {
   const [currentTab, setCurrentTab] = useState("products");
